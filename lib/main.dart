@@ -1,6 +1,6 @@
 import 'package:deboyy_tugas1/deboyy_book.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:deboyy_tugas1/splash_screen.dart'; // Mengimpor SplashScreen yang telah dipisahkan
+import 'package:deboyy_tugas1/splash_screen.dart'; 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -19,7 +19,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(), // Menggunakan SplashScreen yang sudah diimpor
+      home: SplashScreen(), 
     );
   }
 }
@@ -115,7 +115,7 @@ class MyHomePage extends StatelessWidget {
           ),
           onTap: () async {
             const whatsappUrl =
-                "https://wa.me/6285244086546"; // Ganti dengan nomor WhatsApp Anda
+                "https://wa.me/6285244086546"; 
             await _launchURL(whatsappUrl);
           },
         ),
@@ -124,7 +124,7 @@ class MyHomePage extends StatelessWidget {
           title: const Text('Instagram', style: TextStyle(color: Colors.white)),
           onTap: () async {
             const instagramUrl =
-                "https://instagram.com/_.deboyy_"; // Ganti dengan username Instagram Anda
+                "https://instagram.com/_.deboyy_"; 
             await _launchURL(instagramUrl);
           },
         ),
@@ -132,7 +132,7 @@ class MyHomePage extends StatelessWidget {
   leading: const Icon(FontAwesomeIcons.github),
   title: const Text('GitHub', style: TextStyle(color: Colors.white)),
   onTap: () async {
-    const githubUrl = "https://github.com/Deboyy12"; // Ganti dengan URL GitHub Anda
+    const githubUrl = "https://github.com/Deboyy12"; 
     await _launchURL(githubUrl);
   },
 ),
@@ -175,7 +175,7 @@ class MyHomePage extends StatelessWidget {
           children: [
             Container(
               height: 200,
-              color: Color.fromARGB(255, 0, 0, 0),
+              color: const Color.fromARGB(255, 0, 0, 0),
               padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
               child: Column(
                 children: [
@@ -185,7 +185,7 @@ class MyHomePage extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(50),
                       child: Image.asset(
-                        'assets/apklogo.png', // Ganti dengan gambar Anda
+                        'assets/apklogo.png', 
                         fit: BoxFit.cover,
                         width: 100,
                         height: 100,
@@ -210,7 +210,7 @@ class MyHomePage extends StatelessWidget {
                   AnimatedTextKit(
                     animatedTexts: [
                       TyperAnimatedText(
-                        "Selamat Datang di | Deboyy flutter",
+                        "Selamat Datang di | Deboyy APK",
                         textStyle: GoogleFonts.montserrat(
                           textStyle: const TextStyle(
                             color: Colors.grey,
