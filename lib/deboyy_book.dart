@@ -5,7 +5,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:lottie/lottie.dart';
 import 'dart:io';
 
-// BookItem model
 class BookItem {
   final String title;
   final double rating;
