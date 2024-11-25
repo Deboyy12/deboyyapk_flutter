@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget {
       backgroundColor: Colors.black, // Latar belakang hitam
       endDrawer: Drawer(
   child: Container(
-    color: Colors.black,  // Menambahkan warna hitam pada seluruh konten drawer
+    color: Colors.black,  
     child: ListView(
       padding: EdgeInsets.zero,
       children: [
